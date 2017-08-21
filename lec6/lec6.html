@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src='../libs/angular.min.js'></script>
+	<script type="text/javascript" src='lec6.js'></script>
+	<style>body { font-size: 1.3em; }</style>
+	<title>Lecutre 6 - Name Calculator</title>
+</head>
+<body ng-app="nameCalculator">
+	<h1>Name Calculator</h1>
+	<div ng-controller="nameController">
+		<div>
+			Enter Your name: 
+			<input type="text" ng-model="name" ng-keyup="displayNumeric();">
+		</div>
+		<div>
+			Total numeric value of your name is: {{totalValue}}
+		</div>
+	</div>
+</body>
+</html>
