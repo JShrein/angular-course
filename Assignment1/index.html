@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="Assignment1App">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../libs/angular.min.js"></script>
+	<script type="text/javascript" src="assignment1.js"></script>
+	<title>Assignment 1</title>
+</head>
+<body ng-controller="Assignment1Controller">
+	<div>
+		<h1>Enter a list of items separated by commas:</h1>
+		<input type="text" ng-model="input_list">
+		<button ng-click="checkItems()">Check Items</button>
+		<br>
+		{{message}}
+	</div>
+</body>
+</html>
